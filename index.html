@@ -1,12 +1,942 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haclab</title>
+    <title>Haclab - custom softwares Development, Web & mobile app design</title>
+    <meta name="description"
+        content="For best fit custom software development, professional website development & engaging mobile app development services in and around kireka Kampala Uganda">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://haclab.net/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Haclab Co LTD | Software, Web &  App Development In Uganda">
+    <meta property="og:description"
+        content="For best fit custom software development, professional website development & engaging mobile app development services in and around kireka Kampala Uganda">
+    <meta property="og:image" content="https://haclab.net/assets/images/open.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="haclab.net">
+    <meta property="twitter:url" content="https://haclab.net/">
+    <meta name="twitter:title" content="Haclab Co LTD | Software, Web &  App Development In Uganda">
+    <meta name="twitter:description"
+        content="For best fit custom software development, professional website development & engaging mobile app development services in and around kireka Kampala Uganda">
+    <meta name="twitter:image" content="https://haclab.net/assets/images/open.jpg">
+
+    <!-- Twitter single-event website tag code -->
+<script src="//static.ads-twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid('o9nw9', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=o9nw9&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=o9nw9&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+</noscript>
+<!-- End Twitter single-event website tag code -->
+
+    <meta name="copyright" content="Haclab Company Limited" />
+    <meta name="author" content="Haclab Company Limited" />
+    <meta name="reply-to" content="info@haclab.net" />
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords"
+        content="custom software,custom software system,custom system software,custom software development,custom software development in Kampala,custom software development in Uganda,software development,custom software development in Kampala,software development in Uganda, professional web design,affordable website development,website development in Uganda,website development in Kampala,mobile app development,off the shelf software systems,haclab company Limited, haclab co, haclab co ltd, software in Uganda, website designers, website developers, web service providers,website developers in Uganda, system developers in Uganda, software developers in Uganda, info management systems in Uganda, Infomation management systems, software Production, outsourcing,software, development, Software Development in Uganda, Software Developers in Uganda, Web-based software in Uganda, IT services in Uganda, mobile apps development Uganda, Uganda website designers, Uganda website developers, API Integration in Uganda, sms integration Uganda,custom web software development Uganda">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="yandex-verification" content="522958480e3b7a1b" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon-120x120.svg">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS ============================================ -->
+
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/622b2d1b1ffac05b1d7e1559/1ftsagffq';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148952509-3">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148952509-3');
+    </script>
+
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Haclab Company Limited",
+            "alternateName": "Haclab CO",
+            "url": "http://www.haclab.net",
+            "logo": "https://www.haclab.net/assets/images/logo/logo-t.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+256781343882",
+                "contactType": "customer service"
+            },
+            "sameAs": "https://twitter.com/HaclabCo"
+        }
+    </script>
+
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Haclab Company Limited",
+            "image": "https://haclab.net/assets/images/open.jpg",
+            "@id": "",
+            "url": "https://haclab.net/",
+            "telephone": "+256781343882",
+            "priceRange": "UGX 500,000 - UGX 15,000,000",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kireka Kamuli Road",
+                "addressLocality": "Kampala",
+                "postalCode": "",
+                "addressCountry": "UG"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 0.3526415,
+                "longitude": 32.6431388
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Friday",
+                    "Thursday",
+                    "Wednesday",
+                    "Tuesday",
+                    "Monday"
+                ],
+                "opens": "08:00",
+                "closes": "17:00"
+            }, {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "16:00"
+            }],
+            "department": [{
+                "@type": "ProfessionalService",
+                "name": "Software Developmet",
+                "image": "https://haclab.net/assets/images/open.jpg",
+                "telephone": "+256781343882",
+                "priceRange": "UGX 2,000,000 - UGX 15,000,000",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Kireka Kamuli Road",
+                    "addressLocality": "Kampala",
+                    "postalCode": "",
+                    "addressCountry": "UG"
+                }
+            }, {
+                "@type": "ProfessionalService",
+                "name": "Affordable Website Development",
+                "image": "https://haclab.net/assets/images/open.jpg",
+                "telephone": "+256781343882",
+                "priceRange": "UGX 500,000 - UGX 15,000,000",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Kireka Kamuli Road",
+                    "addressLocality": "Kampala",
+                    "postalCode": "",
+                    "addressCountry": "UG"
+                }
+            }, {
+                "@type": "ProfessionalService",
+                "name": "Mobile Application Development",
+                "image": "https://haclab.net/assets/images/open.jpg",
+                "telephone": "+256781343882",
+                "priceRange": "UGX 2,000,000 - UGX 15,000,000",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Kireka Kamuli Road",
+                    "addressLocality": "Kampala",
+                    "postalCode": "",
+                    "addressCountry": "UG"
+                }
+            }]
+        }
+    </script>
+
+
+
+
+
+
 </head>
+
 <body>
-    <h1>Welcome to Haclab</h1>
+
+
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2" style="padding: 0;"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--====================  header area ====================-->
+    <div class="header-area header-area--absolute">
+
+        <div class="header-top-bar-info border-bottom d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-bar-wrap">
+                            <!-- <div class="top-bar-left">
+                                <div class="top-bar-text text-white"><a href="#" class="font-medium display-inline">Now Hiring:</a> Are you a driven and motivated 1st Line IT Support Engineer?</div>
+                            </div> -->
+                            <div class="top-bar-right">
+                                <ul class="top-bar-info">
+                                    <li class="info-item">
+                                        <a title="Call us" href="tel:+256781343882" class="info-link text-white">
+                                            <i class="info-icon fa fa-phone"></i>
+                                            <span class="info-text"><strong>+256 781 343 882</strong></span>
+                                        </a>
+                                    </li>
+                                    <li class="info-item text-white">
+                                        <i class="info-icon fa fa-map-marker-alt"></i>
+                                        <span class="info-text">Kireka Kamuli Road</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-wrap header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header position-relative">
+                            <!-- brand logo -->
+                            <div class="header__logo">
+                                <a title="Home" href="/">
+                                    <img src="assets/images/logo/light-logo.webp" width="160" height="48"
+                                        class="img-fluid light-logo" alt="Haclab Company Limited White logo">
+                                    <img src="assets/images/logo/logo-dark.webp" width="160" height="48"
+                                        class="img-fluid dark-logo" alt="Haclab Company Limited colored logo">
+                                </a>
+                            </div>
+
+                            <div class="header-right">
+                                <!-- navigation menu -->
+                                <div class="header__navigation menu-style-four d-none d-xl-block">
+                                    <nav class="navigation-menu">
+
+                                        <ul>
+                                            <li><a title="Home" href="/"><span>Home</span></a></li>
+                                            <li><a title="Our Services" href="/services"><span>Services</span></a></li>
+                                                        <li><a title="Products" href="/products"><span>Products</span></a></li>
+                                            <li><a title="Work" href="/work"><span>Work</span></a></li>
+                                            <li><a title="About Us" href="/about"><span>About</span></a></li>
+                                            <li><a title="Contact Us" href="/contact"><span>Contact</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <!-- mobile menu -->
+                                <div class="mobile-navigation-icon white-md-icon d-block d-xl-none"
+                                    id="mobile-menu-trigger">
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--====================  End of header area  ====================-->
+
+
+
+
+
+
+
+
+    <div id="main-wrapper">
+        <div class="site-wrapper-reveal">
+            <!--============ Resolutions Hero Start ============-->
+            <div class="resolutions-hero-slider position-relative">
+                <div class="swiper-container hero-slider__container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hero-wrapper resolutions-hero-space resolutions-hero-bg-2"
+                                data-swiper-autoplay="5000">
+                                <div class="resolutions-hero-area-content">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 m-auto">
+                                                <div class="service-hero-wrap wow move-up">
+                                                    <div class="service-hero-text text-center">
+                                                        <h3 class="text-white">Get your Business a
+                                                        </h3>
+                                                        <h1 class="font-weight--reguler text-white mb-30">Custom
+                                                            Software</h1>
+                                                        <p class="text-white">Attain efficiency and effectiveness
+                                                            effortlessly</p>
+
+                                                        <div class="hero-button-group section-space--mt_50">
+                                                            <a title="contact Us" href="/contact"
+                                                                class="ht-btn ht-btn-md">Free
+                                                                consultation</a>
+                                                            <a title="Our Services" href="/services"
+                                                                class="ht-btn ht-btn-md btn--white"><span
+                                                                    class="btn-icon me-2"><i
+                                                                        class="fa fa-play"></i></span> Learn
+                                                                More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vc_row-separator center_curve_alt bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none"
+                        viewBox="0 0 100 100">
+                        <path d="M 0 0 L0 100 L100 100 L100 0 Q 50 200 0 0"></path>
+                    </svg>
+                </div>
+            </div>
+            <!--============ Resolutions Hero End ============-->
+
+
+            <!--===========  feature-images-wrapper  Start =============-->
+            <div class="feature-images-wrapper bg-gray">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="feature-images__five resolutions-hero-bottom">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 wow move-up">
+                                        <!-- ht-box-icon Start -->
+                                        <div class="ht-box-images style-05">
+                                            <div class="image-box-wrap">
+                                                <div class="box-image">
+                                                    <div class="default-image">
+                                                        <img class="img-fulid-icon" src="assets/images/icons/code.svg"
+                                                            alt="Software Development">
+                                                    </div>
+                                                    <div class="hover-images">
+                                                        <img class="img-fulid-icon"
+                                                            src="assets/images/icons/code-light.svg"
+                                                            alt="Software Development">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="heading">Software Development</h5>
+                                                    <div class="text">Improve business efficiency and
+                                                        effectiveness with a custom software that perfectly fits
+                                                        your needs and scales with your business's growth
+                                                    </div>
+                                                    <div class="box-images-arrow">
+                                                        <a title="Custom Software Development"
+                                                            href="/software_development">
+                                                            <span class="button-text">Learn more </span>
+                                                            <i class="far fa-long-arrow-right"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ht-box-icon End -->
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 wow move-up">
+                                        <!-- ht-box-icon Start -->
+                                        <div class="ht-box-images style-05">
+                                            <div class="image-box-wrap">
+                                                <div class="box-image">
+                                                    <div class="default-image">
+                                                        <img class="img-fulid-icon" src="assets/images/icons/mobile.svg"
+                                                            alt="Mobile App Development">
+                                                    </div>
+                                                    <div class="hover-images">
+                                                        <img class="img-fulid-icon"
+                                                            src="assets/images/icons/mobile-light.svg"
+                                                            alt="Mobile App Development">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="heading">Mobile app Development</h5>
+                                                    <div class="text">Choosing to compliment your business
+                                                        with a well crafted mobile application is a good idea now more
+                                                        than ever, Let us bring your product(s) to life
+                                                    </div>
+                                                    <div class="box-images-arrow">
+                                                        <a title="Mobile Application Development"
+                                                            href="/mobile_app_development">
+                                                            <span class="button-text">Learn more </span>
+                                                            <i class="far fa-long-arrow-right"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ht-box-icon End -->
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 wow move-up">
+                                        <!-- ht-box-icon Start -->
+                                        <div class="ht-box-images style-05">
+                                            <div class="image-box-wrap">
+                                                <div class="box-image">
+                                                    <div class="default-image">
+                                                        <img class="img-fulid-icon"
+                                                            src="assets/images/icons/website.svg"
+                                                            alt="Website design and development">
+                                                    </div>
+                                                    <div class="hover-images">
+                                                        <img class="img-fulid-icon"
+                                                            src="assets/images/icons/website-light.svg"
+                                                            alt="Website design and development">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="heading">Web Development </h5>
+                                                    <div class="text">A professionally crafted website helps
+                                                        you overcome geographical limitations in your business and
+                                                        increase your exposure to new customers
+                                                    </div>
+                                                    <div class="box-images-arrow">
+                                                        <a title="Website Design And Development"
+                                                            href="/websites_development">
+                                                            <span class="button-text">Learn more </span>
+                                                            <i class="far fa-long-arrow-right"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ht-box-icon End -->
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="section-under-heading text-center section-space--mt_80">Let's plan your custome
+                                software system together <a title="Contact Us" href="/contact">get started!</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--===========  feature-images-wrapper  End =============-->
+
+
+            <div class="gradation-process-area section-space--ptb_100 bg-gray">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="gradation-title-wrapper section-space--mb_60">
+                                <div class="gradation-title-wrap ">
+                                    <h6 class="section-sub-title text-black mb-20">How we work</h6>
+                                    <h4 class="heading">From idea to perfect fit <br><span
+                                            class="text-color-primary">software system</span></h4>
+                                </div>
+
+
+                                <div class="gradation-sub-heading">
+                                    <h3 class="heading"><mark>04</mark> Steps</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ht-gradation style-01">
+                                <!-- Single item gradation Start -->
+                                <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s"
+                                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+                                    <div class="line"></div>
+                                    <div class="circle-wrap">
+                                        <div class="mask">
+                                            <div class="wave-pulse wave-pulse-1"></div>
+                                            <div class="wave-pulse wave-pulse-2"></div>
+                                            <div class="wave-pulse wave-pulse-3"></div>
+                                        </div>
+
+                                        <h6 class="circle">1</h6>
+                                    </div>
+
+                                    <div class="content-wrap">
+
+                                        <h6 class="heading">01. Idea discussion</h6>
+
+                                        <div class="text">We meet customers and discuss the details about
+                                            needs and demands before proposing a plan.</div>
+
+                                    </div>
+                                </div>
+                                <!-- Single item gradation End -->
+
+                                <!-- Single item gradation Start -->
+                                <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.15s"
+                                    style="visibility: visible; animation-delay: 0.15s; animation-name: fadeInRight;">
+                                    <div class="line"></div>
+                                    <div class="circle-wrap">
+                                        <div class="mask">
+                                            <div class="wave-pulse wave-pulse-1"></div>
+                                            <div class="wave-pulse wave-pulse-2"></div>
+                                            <div class="wave-pulse wave-pulse-3"></div>
+                                        </div>
+
+                                        <h6 class="circle">2</h6>
+                                    </div>
+
+                                    <div class="content-wrap">
+
+                                        <h6 class="heading">02. Concepts &amp; Initatives</h6>
+
+                                        <div class="text">Our experts come up with all kinds of ideas and
+                                            initiatives for delivering the best solutions for IT services chosen.</div>
+
+                                    </div>
+                                </div>
+                                <!-- Single item gradation End -->
+
+                                <!-- Single item gradation Start -->
+                                <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.20s"
+                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+                                    <div class="line"></div>
+                                    <div class="circle-wrap">
+                                        <div class="mask">
+                                            <div class="wave-pulse wave-pulse-1"></div>
+                                            <div class="wave-pulse wave-pulse-2"></div>
+                                            <div class="wave-pulse wave-pulse-3"></div>
+                                        </div>
+
+                                        <h6 class="circle">3</h6>
+                                    </div>
+
+                                    <div class="content-wrap">
+
+                                        <h6 class="heading">03. Coding &amp; Testing</h6>
+
+                                        <div class="text">After agreeing on the ideas and plans, we will
+                                            design, develop, &amp; test the proposed solution.</div>
+
+                                    </div>
+                                </div>
+                                <!-- Single item gradation End -->
+
+                                <!-- Single item gradation Start -->
+                                <div class="item item-1 animate wow fadeInRight" data-wow-delay="0.25s"
+                                    style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
+                                    <div class="line"></div>
+                                    <div class="circle-wrap">
+                                        <div class="mask">
+                                            <div class="wave-pulse wave-pulse-1"></div>
+                                            <div class="wave-pulse wave-pulse-2"></div>
+                                            <div class="wave-pulse wave-pulse-3"></div>
+                                        </div>
+
+                                        <h6 class="circle">4</h6>
+                                    </div>
+
+                                    <div class="content-wrap">
+
+                                        <h6 class="heading">04. Production &amp; Support</h6>
+
+                                        <div class="text">Once the final solution is ready, we put it in
+                                            production and offer support &amp; maintenance.</div>
+
+                                    </div>
+                                </div>
+                                <!-- Single item gradation End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--====================  Conact us Section Start ====================-->
+            <div class="contact-us-section-wrappaer processing-contact-us-bg section-space--ptb_120">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-lg-6">
+                            <div class="conact-us-wrap-one">
+                                <h3 class="heading text-white">Intrested in a Custom system software? Let's Chat</h3>
+
+                                <div class="sub-heading text-white">We do not only offer software developmet services,
+                                    <br>but also well crafted off-the-shelf system softwares and other modern IT
+                                    solutions
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-lg-6">
+                            <div class="contact-info-two text-center">
+                                <div class="icon">
+                                    <span class="fal fa-phone"></span>
+                                </div>
+                                <h6 class="heading font-weight--reguler">Reach out now!</h6>
+                                <h2 class="call-us"><a title="Call us" title="Contact Us"
+                                        href="tel:+256781343882">+256 781 343 882</a></h2>
+                                <div class="contact-us-button mt-20">
+                                    <a href="#" class="btn btn--secondary">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====================  Conact us Section End  ====================-->
+            <!--====================  testimonial section ====================-->
+            <div class="testimonial-slider-area bg-gray section-space--ptb_100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title-wrap text-center section-space--mb_40">
+                                <h6 class="section-sub-title mb-20">People Enjoyng custom softwares</h6>
+                                <h3 class="heading">What do people say about <span class="text-color-primary">
+                                        Haclab Co</span></h3>
+                            </div>
+                            <div class="testimonial-slider">
+                                <div class="swiper-container testimonial-slider__container">
+                                    <div class="swiper-wrapper testimonial-slider__wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-slider__one wow move-up">
+
+                                                <div class="testimonial-slider--info">
+                                                    <div class="testimonial-slider__media">
+                                                        <img src="assets/images/testimonial/haclab-testimonial-avata-wionmotors-90x90.webp"
+                                                            class="img-fluid"
+                                                            alt="Johnson Kibirige - Wion motors">
+                                                    </div>
+
+                                                    <div class="testimonial-slider__author">
+                                                        <div class="testimonial-rating">
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </div>
+                                                        <div class="author-info">
+                                                            <h6 class="name">Johnson Kibirige</h6>
+                                                            <a title="Wion Motors Limited" href="https://wionmotors.com"
+                                                                target="_blank">
+                                                                <span class="designation">Wion Motors Limited</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-slider__text">Good Work, They were well
+                                                    equipped for the job they were contracted to do.</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination swiper-pagination-t01 section-space--mt_30"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====================  End of testimonial section  ====================-->
+
+
+
+
+           
+<!--========== Call to Action Area Start ============-->
+<div class="cta-image-area_one section-space--ptb_80 cta-bg-image_two">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-8 col-lg-7">
+                <div class="cta-content md-text-center">
+                    <h3 class="heading">Empower your business/organization with a best fit<span class="text-color-primary"> custom software</span></h3>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="cta-button-group--two text-center">
+                    <a href="/contact" class="btn btn--white btn-one"><span class="btn-icon me-2"><i class="far fa-comment-alt-dots"></i></span> Let's talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--========== Call to Action Area End ============-->
+
+</div>
+        <!--====================  footer area ====================-->
+        <div class="footer-area-wrapper reveal-footer bg-gray">
+            <div class="footer-area section-space--ptb_80">
+                <div class="container">
+                    <div class="row footer-widget-wrapper">
+                        <div class="col-lg-4 col-md-6 col-sm-6 footer-widget">
+                            <div class="footer-widget__logo mb-30">
+                                <img src="assets/images/logo/dark-logo-160x48.webp" width="160" height="48" class="img-fluid" alt="Haclab logo">
+                            </div>
+                            <ul class="footer-widget__list">
+                                <p>
+                                    Haclab Company Limited is a Custom software development company based in Kampala, Uganda. Assisting companies with custom software development and other Modern it solutions.
+                                </p>
+                                <li>Kireka Kamuli Road</li>
+                                <li><a title="Email us" href="mailto:info@haclab.net" class="hover-style-link">info@haclab.net</a></li>
+                                <li><a title="Call us" href="tel:+256781343882" class="hover-style-link text-black font-weight--bold">(+256) 781 343 882</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">What we do</h6>
+                            <ul class="footer-widget__list">
+                                <li><a title="Custom software development" href="/software_development" class="hover-style-link">Software Development</a></li>
+                                <li><a title="Website Development" href="/websites_development" class="hover-style-link">Web Development</a></li>
+                                <li><a  title="Mobile Application Development" href="/mobile_app_development" class="hover-style-link">Mobile Apps</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">Quick links</h6>
+                            <ul class="footer-widget__list">
+                                <li><a title="Terms &amp; Conditions" href="/terms" class="hover-style-link">Terms &amp; Conditions</a></li>
+                                <li><a title="Privacy Policy" href="/privacy" class="hover-style-link">Privacy Policy</a></li>
+                                <li><a title="Cookies Policy" href="/cookies" class="hover-style-link">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">Support</h6>
+                            <ul class="footer-widget__list">
+                                {{-- <li><a href="/faq" class="hover-style-link">Help & FAQ</a></li> --}}
+                                <li><a title="Contact us" href="/contact" class="hover-style-link">Contact Us</a></li>
+                                <li><a title="About US" href="/about" class="hover-style-link">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <div class="footer-widget__title section-space--mb_50"></div>
+                            <ul class="footer-widget__list">
+                                <li><a href="#" class="image_btn"><img class="img-fluid" src="assets/images/icons/aeroland-button-google-play.webp" alt=""></a></li>
+                                <li><a href="#" class="image_btn"><img class="img-fluid" src="assets/images/icons/aeroland-button-app-store.webp" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright-area section-space--pb_30">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <span class="copyright-text">&copy; 2022 Haclab Co LTD. All Rights Reserved.</span>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <ul class="list ht-social-networks solid-rounded-icon">
+
+                                <li class="item">
+                                    <a title="Twitter" href="https://twitter.com/HaclabCo" target="_blank" aria-label="Twitter" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-twitter link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a title="Facebook" href="https://web.facebook.com/HytechUg" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-facebook-f link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a title="Instagram" href="https://www.instagram.com/haclab_co/" target="_blank" aria-label="Instagram" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-instagram link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a title="Linked In" href="https://www.linkedin.com/company/hytech-Uganda" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-linkedin link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a title="Git Hub" href="https://www.linkedin.com/company/hytech-Uganda" target="_blank" aria-label="Github" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-github link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a title="Whatsapp" href="https://www.linkedin.com/company/hytech-Uganda" target="_blank" aria-label="Whatsapp" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-whatsapp link-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--====================  End of footer area  ====================-->
+
+
+
+
+
+
+
+
+
+        </div>
+        <!--====================  scroll top ====================-->
+        <a title="Up" href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!--====================  End of scroll top  ====================-->
+
+        <!--====================  mobile menu overlay ====================-->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-overlay__inner">
+                <div class="mobile-menu-overlay__header">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-8">
+                                <!-- logo -->
+                                <div class="logo">
+                                    <a title="Home" href="/">
+                                        <img src="assets/images/logo/logo-dark.webp" class="img-fluid"
+                                            alt="Haclab Colored logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-4">
+                                <!-- mobile menu content -->
+                                <div class="mobile-menu-content text-end">
+                                    <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-overlay__body">
+                    <nav class="offcanvas-navigation">
+                        <ul>
+                            <li><a title="Home" href="/"><span>Home</span></a></li>
+                            <li><a title="Services" href="/services"><span>Services</span></a></li>
+                            <li><a title="Products" href="/products"><span>Products</span></a></li>
+                            <li><a title="Work" href="/work"><span>Work</span></a></li>
+                            <li><a title="About us" href="/about"><span>About</span></a></li>
+                            <li><a title="About US" href="/contact"><span>Contact</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of mobile menu overlay  ====================-->
+
+
+
+
+
+
+
+        <!--====================  search overlay ====================-->
+        <div class="search-overlay" id="search-overlay">
+
+            <div class="search-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 ms-auto col-4">
+                            <!-- search content -->
+                            <div class="search-content text-end">
+                                <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-overlay__inner">
+                <div class="search-overlay__body">
+                    <div class="search-overlay__form">
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of search overlay  ====================-->
+
+        <!-- JS
+    ============================================ -->
+        <!-- Modernizer JS -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- jQuery JS -->
+        <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+        <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+
+        <script src="assets/js/plugins/plugins.min.js"></script>
+
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+
+<script>
+    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://haclab.wionmotors.com/mk/mtc.js','mt');
+
+    mt('send', 'pageview');
+</script>
 </body>
+
 </html>
