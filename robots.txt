@@ -1,0 +1,25 @@
+# Allow all search engines
+User-agent: *
+
+# Disallow sensitive directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /user-profile/
+
+# Disallow temporary or test pages
+Disallow: /temp/
+Disallow: /test/
+Disallow: /dev/
+
+# Allow main sections of the site
+Allow: /services/
+Allow: /about/
+Allow: /contact/
+Allow: /locations/
+Allow: /blog/
+
+# Sitemap
+Sitemap: https://haclab.net/sitemap.xml
